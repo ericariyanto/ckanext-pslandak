@@ -1,0 +1,25 @@
+{% ckan_extends %}
+
+{% block styles %}
+    {{ super() }}
+
+    {# Import pslandak.css using Webassets. 'pslandak/' is
+    the name that the pslandak/webassets directory was registered
+    with when the toolkit.add_resource() function was called.
+    'pslandak' is the name to the Webassets bundle file,
+    registered inside webassets.yml file. #}
+    {% asset 'pslandak/pslandak-css' %}
+
+    <!-- Asset pslandak-css should be above here -->
+
+{% endblock %}
+
+{%- block scripts %}
+    {{ super() }}
+
+    {% asset 'pslandak/pslandak-js' %}
+
+    {%- block subscripts %}
+
+    {% endblock -%}
+{% endblock -%}
