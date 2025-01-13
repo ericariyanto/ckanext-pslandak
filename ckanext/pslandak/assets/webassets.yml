@@ -1,0 +1,14 @@
+# pslandak-js:
+#   filter: rjsmin
+#   output: ckanext-pslandak/%(version)s-pslandak.js
+#   contents:
+#     - js/pslandak.js
+#   extra:
+#     preload:
+#       - base/main
+
+# pslandak-css:
+#   filter: cssrewrite
+#   output: ckanext-pslandak/%(version)s-pslandak.css
+#   contents:
+#     - css/pslandak.css
